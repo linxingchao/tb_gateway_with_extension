@@ -1,0 +1,60 @@
+{
+    "server": {
+        "type": "tcp",
+        "host": "192.168.15.177",
+        "port": 10200,
+        "timeout": 35,
+        "method": "socket",
+        "byteOrder": "BIG",
+        "wordOrder": "LITTLE",
+        "rack": 0,
+        "slot": 1,
+        "devices": [{
+            "unitId": 1,
+            "deviceName": "A00",
+            "attributesPollPeriod": 5000,
+            "timeseriesPollPeriod": 5000,
+            "sendDataOnlyOnChange": false,
+            "attributes": [],
+            "timeseries": [{
+                "tag": "电流A",
+                "type": "float",
+                "registerType": "VD",
+                "address": 1150,
+                "wordsCount": 4
+            }, {
+                "tag": "电流B",
+                "type": "float",
+                "registerType": "VD",
+                "address": 1154,
+                "wordsCount": 4
+            }, {
+                "tag": "电流C",
+                "type": "float",
+                "registerType": "VD",
+                "address": 1158,
+                "wordsCount": 4
+            }, {
+                "tag": "泵房湿度",
+                "type": "int",
+                "registerType": "VW",
+                "address": 1130,
+                "wordsCount": 2
+            }, {
+                "tag": "泵房温度",
+                "type": "int",
+                "registerType": "VW",
+                "address": 1132,
+                "wordsCount": 2
+            }, {
+                "tag": "室外温度",
+                "type": "int",
+                "registerType": "VW",
+                "address": 1124,
+                "wordsCount": 2
+            }],
+            "attributeUpdates": [],
+            "rpc": []
+        }]
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "server": {
+        "type": "tcp",
+        "host": "127.0.0.1",
+        "port": 5022,
+        "timeout": 35,
+        "method": "socket",
+        "byteOrder": "BIG",
+        "devices": [{
+            "unitId": 1,
+            "deviceName": "127.0.0.1:5022",
+            "attributesPollPeriod": 5000,
+            "timeseriesPollPeriod": 5000,
+            "sendDataOnlyOnChange": false,
+            "attributes": [{
+                "tag": "40001",
+                "type": "16int",
+                "functionCode": 3,
+                "objectsCount": 1,
+                "byteOrder": "BIG",
+                "wordOrder": "LITTLE",
+                "address": 1
+            }, {
+                "tag": "40002",
+                "type": "16int",
+                "functionCode": 3,
+                "objectsCount": 1,
+                "byteOrder": "BIG",
+                "wordOrder": "LITTLE",
+                "address": 2
+            }, {
+                "tag": "40003",
+                "type": "16int",
+                "functionCode": 3,
+                "objectsCount": 1,
+                "byteOrder": "BIG",
+                "wordOrder": "LITTLE",
+                "address": 3
+            }, {
+                "tag": "40004",
+                "type": "16int",
+                "functionCode": 3,
+                "objectsCount": 1,
+                "byteOrder": "BIG",
+                "wordOrder": "LITTLE",
+                "address": 4
+            }, {
+                "tag": "40005",
+                "type": "16int",
+                "functionCode": 3,
+                "objectsCount": 1,
+                "byteOrder": "BIG",
+                "wordOrder": "LITTLE",
+                "address": 5
+            }, {
+                "tag": "40006",
+                "type": "16int",
+                "functionCode": 3,
+                "objectsCount": 1,
+                "byteOrder": "BIG",
+                "wordOrder": "LITTLE",
+                "address": 6
+            }],
+            "timeseries": [{
+                    "tag": "40007",
+                    "type": "16int",
+                    "functionCode": 3,
+                    "objectsCount": 1,
+                    "byteOrder": "BIG",
+                    "wordOrder": "LITTLE",
+                    "address": 7
+                },
+                {
+                    "tag": "40008",
+                    "type": "16int",
+                    "functionCode": 3,
+                    "objectsCount": 1,
+                    "byteOrder": "BIG",
+                    "wordOrder": "LITTLE",
+                    "address": 8
+                },
+                {
+                    "tag": "40009",
+                    "type": "16int",
+                    "functionCode": 3,
+                    "objectsCount": 1,
+                    "byteOrder": "BIG",
+                    "wordOrder": "LITTLE",
+                    "address": 9
+                },
+                {
+                    "tag": "40010",
+                    "type": "16int",
+                    "functionCode": 3,
+                    "objectsCount": 1,
+                    "byteOrder": "BIG",
+                    "wordOrder": "LITTLE",
+                    "address": 10
+                },
+                {
+                    "tag": "40011",
+                    "type": "16int",
+                    "functionCode": 3,
+                    "objectsCount": 1,
+                    "byteOrder": "BIG",
+                    "wordOrder": "LITTLE",
+                    "address": 11
+                }
+
+            ],
+            "attributeUpdates": [{
+                "tag": "shared_attribute_write",
+                "type": "32int",
+                "functionCode": 6,
+                "objectsCount": 2,
+                "address": 29
+            }],
+            "rpc": [{
+                    "tag": "setValue",
+                    "type": "bits",
+                    "functionCode": 5,
+                    "objectsCount": 1,
+                    "address": 11
+                },
+                {
+                    "tag": "getValue",
+                    "type": "bits",
+                    "functionCode": 1,
+                    "objectsCount": 1,
+                    "address": 11
+                },
+                {
+                    "tag": "setCPUFanSpeed",
+                    "type": "32int",
+                    "functionCode": 16,
+                    "objectsCount": 2,
+                    "address": 33
+                },
+                {
+                    "tag": "getCPULoad",
+                    "type": "32int",
+                    "functionCode": 4,
+                    "objectsCount": 2,
+                    "address": 35
+                }
+            ]
+        }]
+    }
+}

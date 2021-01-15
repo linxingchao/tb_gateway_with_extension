@@ -1,0 +1,30 @@
+{
+    "server": {
+        "type": "tcp",
+        "host": "192.168.12.13",
+        "port": 102,
+        "timeout": 35,
+        "method": "socket",
+        "byteOrder": "BIG",
+        "wordOrder": "LITTLE",
+        "rack": 0,
+        "slot": 1,
+        "devices": [{
+            "unitId": 1,
+            "deviceName": "192.168.12.13:102",
+            "attributesPollPeriod": 5000,
+            "timeseriesPollPeriod": 5000,
+            "sendDataOnlyOnChange": false,
+            "attributes": [],
+            "timeseries": [{
+                "tag": "VD1000",
+                "type": "float",
+                "registerType": "V",
+                "address": 1000,
+                "wordsCount": 4
+            }],
+            "attributeUpdates": [],
+            "rpc": []
+        }]
+    }
+}

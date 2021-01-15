@@ -1,0 +1,87 @@
+thingsboard:
+  host: 172.16.10.104
+  port: 1883
+  remoteShell: false
+  remoteConfiguration: false
+  security:
+    accessToken: 123456789
+  qos: 1
+storage:
+  type: memory
+  read_records_count: 100
+  max_records_count: 100000
+#  type: file
+#  data_folder_path: ./data/
+#  max_file_count: 10
+#  max_read_records_count: 10
+#  max_records_per_file: 10000
+connectors:
+#  -
+##    name: MQTT Broker Connector
+#    type: mqtt
+#    configuration: mqtt.json
+
+#  -
+#    name: Modbus Connector
+#    type: modbus
+#    configuration: modbus.json
+
+-
+  name: S7 Connector
+  type: s7
+  configuration: s71200_A01.json
+
+-
+  name: S7 Connector1
+  type: s7
+  configuration: s7200_A00.json
+#  -
+#    name: Modbus Connector
+#    type: modbus
+#    configuration: modbus_serial.json
+#
+#  -
+#    name: OPC-UA Connector
+#    type: opcua
+#    configuration: opcua.json
+#
+#  -
+#    name: BLE Connector
+#    type: ble
+#    configuration: ble.json
+#
+#  -
+#    name: REQUEST Connector
+#    type: request
+#    configuration: request.json
+#
+#  -
+#    name: CAN Connector
+#    type: can
+#    configuration: can.json
+#
+#  -
+#    name: BACnet Connector
+#    type: bacnet
+#    configuration: bacnet.json
+#
+#  -
+#    name: ODBC Connector
+#    type: odbc
+#    configuration: odbc.json
+#
+#  -
+#    name: REST Connector
+#    type: rest
+#    configuration: rest.json
+#
+#  -
+#    name: SNMP Connector
+#    type: snmp
+#    configuration: snmp.json
+#
+#  -
+#    name: Custom Serial Connector
+#    type: serial
+#    configuration: custom_serial.json
+#    class: CustomSerialConnector
